@@ -1,0 +1,16 @@
+
+table,tr,th,td{
+    border: 1px solid black;
+    padding: 5px;
+    
+  }
+  table{
+    width: 100%;
+  }
+  button{
+    background-color:rgb(225, 122, 12);
+    color: white;
+  }
+  .heading{
+    background-color: darkorange;
+  }

@@ -1,0 +1,11 @@
+
+
+    <mat-card>
+        <table [border]="'2px'" [cellPadding]="'20px'" [cellSpacing]="'0px'">
+            <tr class="heading"><th>Name</th><th>Description</th><th>Price</th><th>Discount</th><th>Discounted price</th><th>Enable</th><th>Update</th></tr>
+            <tr *ngFor="let p of products"><td>{{p.productname}}</td><td>{{p.productdescription}}</td><td>{{p.price}}</td><td>{{p.discount}}</td><td>{{p.discountedprice}}</td><td>{{p.enable}}</td> <td><Button [routerLink]="'/admin/updat/'+p.productid" >Update</Button></td></tr>
+            
+        </table>
+        
+    </mat-card>
+

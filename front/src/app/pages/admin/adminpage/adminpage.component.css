@@ -1,0 +1,29 @@
+.main .blog li{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    
+    padding: 20px;
+    
+}
+.main .blog a{
+  text-decoration: none;
+  color: black;
+}
+.main .blog li:hover{
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    background-color: aliceblue;
+    padding: 20px;
+    
+}
+.main{
+    margin-top: 20px;
+}
+.full-width{
+    width: 100%;
+}
+.main .blog{
+    height: 100%;
+}

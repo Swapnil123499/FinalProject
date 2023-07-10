@@ -1,0 +1,61 @@
+
+    <ng-container *ngIf="products.length !=0">
+         <div class="row">
+            <div class="col-md-8">
+                <div class="container-fluid">
+                   <div class="card">
+                   <h3>payment cart </h3><br>
+                   <h4><u><b>{{username}}</b></u></h4>
+                   {{counting}}
+                   
+                    <div class="cartblock" *ngFor="let p of products;">
+                        <h3>{{p.productnameofcart}}</h3>
+                        <hr>
+                        <p>price: ₹ {{p.discountedpriceincart}}</p>
+                     
+                        <br>
+                    <!--  <button id="decrement" (click)="decreasing()">-</button>
+                        <input type="number" [(ngModel)]="counting" id="count" value="0" readonly>
+                        <button id="increment" (click)="increasing()">+</button>
+                    -->
+<br>
+                        <a (click)="removedCartFromService(p.cartid)"><b>Remove item</b></a>&nbsp;&nbsp;&nbsp;<a><b>Save for later</b></a>
+                        <hr>
+                    </div>
+                    <!--{{grandTotal/100}}-->
+                    <button mat-raised-button class="paybutton" (click)="totalvaluegot()">Pay Amount</button>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="card">
+                        <img src="./assets/doc/Shoppingcart.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+         </div>
+    </ng-container>
+
+
+
+
+
+
+
+<ng-container *ngIf="products.length ==0">
+    <div class="container">
+        <div class="card cardclass">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+            <h4>your cart is empty !!</h4>
+            <h6>Add items to it now</h6>
+            <button class="btn btn-primary" routerLink="/user-dashboard/">Shop now</button>
+        </div>
+    </div>
+    
+</ng-container>
+
+

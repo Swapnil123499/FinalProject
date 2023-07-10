@@ -1,0 +1,40 @@
+<ng-container *ngIf="orderdetail.length !=0">
+    <div class="row">
+       <div class="col-md-8">
+           <div class="container-fluid">
+              <div class="card">
+              <h3>Order List </h3><br>
+             <!-- <h4><u><b>{{username}}</b></u></h4>-->
+             
+              <h4>Your ordered are delevered in two three days</h4>
+               <div class="cartblock" *ngFor="let p of orderdetail;">
+                   <h3>{{p.productnameofcart}}</h3>
+                   <hr>
+                   <p>price: ₹ {{p.discountedpriceincart}}</p>
+                
+                   <br>
+               <!--  <button id="decrement" (click)="decreasing()">-</button>
+                   <input type="number" [(ngModel)]="counting" id="count" value="0" readonly>
+                   <button id="increment" (click)="increasing()">+</button>
+               -->
+<br>       
+                   <a ><b>Remove item</b></a>&nbsp;&nbsp;&nbsp;<a><b>{{date}}</b></a>
+                   <hr>
+               </div>
+               <!--{{grandTotal/100}}-->
+               <button mat-raised-button class="paybutton"  (click)="deletecart()">Back</button>
+              </div>
+           </div>
+       </div>
+       <div class="col-md-4">
+           <div class="container-fluid">
+               <div class="card">
+                   <img src="./assets/doc/orderdlist.gif" alt="">
+               </div>
+           </div>
+       </div>
+    </div>
+</ng-container>
+
+
+

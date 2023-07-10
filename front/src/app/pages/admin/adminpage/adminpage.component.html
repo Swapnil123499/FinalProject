@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+               <mat-card >
+                <ul class="blog" >
+                    <li><a routerLink="/admin/"><i class="fa-solid fa-folder"></i> Home</a></li>
+                    <li><a routerLink="/admin/create"><i class="fa-solid fa-folder"></i> Create_Product</a></li>
+                    <li><a routerLink="/admin/update"><i class="fa-solid fa-folder"></i> Update_Product</a></li>
+                    <li><a routerLink="/admin/allproduct"><i class="fa-solid fa-folder"></i> Get_Product</a></li>
+
+                    <li><a routerLink="/admin/activeproduct"><i class="fa-solid fa-folder"></i> Active_Product</a></li>
+                    <li><a routerLink="/admin/deleteproduct"><i class="fa-solid fa-folder"></i> Delete_Product</a></li>
+                    <li><a 
+                        (click)="logout()"
+                        ><i class="fa-solid fa-folder"></i> Logout</a></li>
+                </ul>
+               </mat-card>
+            </div>
+            <div class="col-md-9">
+                <router-outlet></router-outlet>
+            </div>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

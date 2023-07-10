@@ -1,0 +1,12 @@
+#abc{
+width: 2px;
+height: 2px;
+
+}
+.full-width{
+    width: 100%;
+}
+.mian{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(38,108,101,1) 74%, rgba(0,212,255,1) 100%);
+    }

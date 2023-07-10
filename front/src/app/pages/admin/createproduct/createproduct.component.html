@@ -1,0 +1,56 @@
+<mat-card class="dash">
+    <div class="text-center"><h2>Create Product</h2></div>
+    <form  (ngSubmit)="formSubmit()">
+
+        <!--User Name field-->
+
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>User name</mat-label>
+            <input
+            required
+            [(ngModel)]="Product.productname"
+            name="productname"
+            matInput placeholder="Enter product name">
+        </mat-form-field>
+        <!--price-->
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>User price</mat-label>
+            <input
+            required
+           [(ngModel)]="Product.price"
+           type="number"
+            name="price"
+             matInput placeholder="Enter price">
+        </mat-form-field>
+        <!--discount-->
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>discount</mat-label>
+            <input
+            required
+           [(ngModel)]="Product.discount"
+            type="number"
+           name="discount"
+             matInput placeholder="Enter discount percent">
+        </mat-form-field>
+        
+        <!--descreaption-->
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>productdescription</mat-label>
+            <input
+            required
+            [(ngModel)]="Product.productdescription"
+            name="productdescription"
+             matInput placeholder="Enter productdescription">
+        </mat-form-field>
+        <mat-slide-toggle [(ngModel)]="Product.enable" name="enable">enable</mat-slide-toggle>
+        <!--button-->
+        <div class="container text-center">
+            <button type="submit" mat-raised-button color="primary">submit</button>
+            <button style="margin-left: 20px" mat-raised-button color="accent">Clear</button>
+        </div>
+        <hr color="">
+        
+
+
+    </form>
+ </mat-card>
